@@ -28,6 +28,7 @@ jobs:
           path: ./frontend
         env:
           STRAPI_URL: ${{ vars.STRAPI_URL }}
+          STRAPI_MEDIA_URL: ${{ vars.STRAPI_MEDIA_URL }}
 
   deploy:
     needs: build
